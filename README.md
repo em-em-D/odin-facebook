@@ -1,7 +1,8 @@
-# README
+# FACEBOOK ODIN PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application created to emulate core facebook functionality of creating a User , sign_in a user ethier through
+their real facebook account using Omniauth gem ,
+once logged_in , a user can create a post , comment on the post and like a post from other users
 
 Things you may want to cover:
 
