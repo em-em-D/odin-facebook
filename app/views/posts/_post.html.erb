@@ -1,0 +1,8 @@
+<li id= "post-<%= Post.id %>">
+    <%= link_to gravatar_for(@posts.user, size:50), @Posts.user %>
+    <span class="user"><%= link_to @post.user.email, @post.user %></span>
+    <span class ="content"><%= @post.content %></span>
+    <span class ="timestamp">
+       posted <%= time_ago_in_words(Post.created_at) %> ago.
+    </span>
+</li>

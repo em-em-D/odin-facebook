@@ -1,0 +1,73 @@
+<% if signed_in? %>
+    <div class ="header">
+    <%=render 'layouts/header' %>
+    </div>
+    <div class="profile">
+        <div class ="row">
+            <aside class= "col-md-4">
+                 <section class = "user_info">
+                      <h1>
+                          <%= gravatar_for current_user %>
+                          <%= current_user.email %>
+                     </h1>
+                    </section>
+             </aside>
+        </div>
+
+        <div class ="content">
+    <%= render 'layouts/postform' %>
+    </div>
+
+<% else %>
+
+    
+    <div class="header">
+      <%= render 'layouts/header' %>
+    </div>
+    
+    <center><h1>Welcome to  Odin-Facebook!</h1></center>
+    
+    <center>This is the place where people came to share their advantures and
+    experiences</center> 
+    <div class="news">
+         <div class = "p">
+            <h1 class="features">Top Features:</h1>
+            <p> >> You can share your ideas with others by writing interesting posts on Instagram.</p>
+            <p> >> You can create helpful or just for fun posts on Instagram.</p>
+             <p> >> You can share your projects to get feedbacks on them.</p>
+             <p> >> You can share your adventures and experience with others.</p>
+            <p> >> You can login with Facebook in Instagram.</p>
+             <p> >> And Much Much more...</p>
+         </div>
+    </div>
+
+ <% end %>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+</div>

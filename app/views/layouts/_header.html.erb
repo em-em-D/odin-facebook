@@ -1,0 +1,18 @@
+<header>
+<div class="topnav" id="myTopnav">
+ <%= link_to "Odin-Facebook", root_path, class: "active" %>
+  
+  <%= link_to "Help", 'static/help' %>
+   <% if signed_in? %>
+          
+              <%= link_to "Settings", edit_user_registration_path %>
+                <%= link_to "Sign out", '/users/sign_out' %>
+                <%= link_to "Posts", '/posts' %>
+                <%= link_to "friend-request", '/friend_requests/new' %>
+   <% else %>
+          <%= link_to "Sign in", new_user_session_path %>
+            <%= link_to "Sign up", new_user_registration_path%>
+        <% end %>
+  </div>
+</div> 
+</header>
